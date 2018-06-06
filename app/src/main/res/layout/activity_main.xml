@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.calculator.MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:background="@drawable/naresh"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        tools:text="display"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/function"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/clear"
+            android:onClick="clear"
+            android:text="AC" />
+
+
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/open"
+            android:onClick="open"
+            android:text="(" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/close"
+            android:onClick="close"
+            android:text=")" />
+
+        <TextView
+            style="@style/function"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/delete"
+            android:onClick="delete"
+            android:text="D" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/function"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/postfix"
+            android:onClick="postfix"
+            android:text="PS" />
+
+        <TextView
+            style="@style/function"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/prefix"
+            android:onClick="prefix"
+            android:text="PR" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/modulus"
+            android:onClick="modulus"
+            android:text="%" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/divide"
+            android:onClick="divide"
+            android:text="/" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/one"
+            android:onClick="one"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/two"
+            android:onClick="two"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/three"
+            android:onClick="three"
+            android:text="3" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/multiply"
+            android:onClick="multiply"
+            android:text="*" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/four"
+            android:onClick="four"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/five"
+            android:onClick="five"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/six"
+            android:onClick="six"
+            android:text="6" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/add"
+            android:onClick="plus"
+            android:text="+" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/seven"
+            android:onClick="seven"
+            android:text="7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/eight"
+            android:onClick="eight"
+            android:text="8" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/nine"
+            android:onClick="nine"
+            android:text="9" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/minus"
+            android:onClick="minus"
+            android:text="-" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Linearlayoutstyle"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MyStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/MyStyle"
+            android:id="@+id/zero"
+            android:onClick="zero"
+            android:text="0" />
+
+        <TextView
+            style="@style/OperatorsStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/dot"
+            android:onClick="dot"
+            android:text="." />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/naresh"
+            android:id="@+id/equals"
+            android:onClick="equals"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:text="=" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
